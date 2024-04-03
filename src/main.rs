@@ -56,7 +56,7 @@ fn build_ui(app: &Application) {
         .child(&drawing_area)
         .build();
 
-    let draw_duration = Duration::new(0u64, 1000000u32);
+    let draw_duration = Duration::new(0u64, 10000000u32);
     // glib::timeout_add(draw_duration, move || {
     //     //let drawing_area = drawing_area.clone();
     //     //drawing_area.queue_draw();
@@ -143,7 +143,7 @@ fn initialize_game_state(sand_state: & mut [[u32; NUM_COLS]; NUM_ROWS])
 
 fn process_game_state(sand_state: & mut [[u32; NUM_COLS]; NUM_ROWS])
 {
-    thread::sleep(Duration::from_millis(200));
+    //thread::sleep(Duration::from_millis(200));
 
 
     for row in 0..NUM_ROWS - 1
