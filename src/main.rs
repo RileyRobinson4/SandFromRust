@@ -1,10 +1,10 @@
 extern crate gtk;
 extern crate cairo;
 
-use gtk::gdk::RGBA;
+
 use gtk::prelude::*;
-use gtk::{glib, Application, ApplicationWindow, Button, DrawingArea};
-use cairo::{ ImageSurface, Format, Context };
+use gtk::{glib, Application, ApplicationWindow, DrawingArea};
+
 
 const APP_ID: &str = "org.gtk_rs.HelloWorld2";
 
